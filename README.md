@@ -16,6 +16,13 @@ This project extracts and analyzes 227,588+ customer reviews from the Bayu telec
   - Official company responses
   - User engagement metrics (thumbs up count)
 
+## Visualizations
+
+### Word Cloud Analysis
+![Word Cloud of User Reviews](images/wordcloud_reviews.png)
+
+The word cloud above represents the most frequently occurring terms in all user reviews. Larger text indicates more frequently mentioned words, revealing common themes and pain points users discuss.
+
 ## Project Structure
 
 - `bayu_sentimen_analysis.ipynb` - Complete analysis notebook including:
@@ -24,6 +31,7 @@ This project extracts and analyzes 227,588+ customer reviews from the Bayu telec
   - Sentiment classification and modeling
   - Statistical insights and findings
 - `ulasan_aplikasi.csv` - Dataset containing all review records
+- `images/` - Visualizations and charts generated from analysis
 
 ## Methodology
 
