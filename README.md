@@ -1,54 +1,106 @@
 # Bayu App Sentiment Analysis
 
-A sentiment analysis project that analyzes user reviews from the Bayu (by.U) mobile application using natural language processing and machine learning techniques.
+A comprehensive sentiment analysis project that analyzes user reviews from the Bayu (by.U) mobile application using natural language processing and machine learning techniques.
 
 ## Overview
 
-This project extracts and analyzes customer reviews from the Bayu telecommunications application to understand user sentiment, identify pain points, and evaluate customer satisfaction. The analysis includes data preprocessing, sentiment classification, and statistical insights on user feedback patterns.
+This project extracts and analyzes 227,588+ customer reviews from the Bayu telecommunications application to understand user sentiment, identify pain points, and evaluate customer satisfaction. The analysis includes data preprocessing, sentiment classification, and statistical insights on user feedback patterns.
 
 ## Dataset
 
-- **Source**: Bayu (by.U) application reviews
+- **Source**: Bayu (by.U) application reviews from Google Play Store
 - **Records**: 227,588 reviews
-- **Features**: User reviews, ratings, timestamps, version information, and official responses
+- **Features**:
+  - User reviews and ratings
+  - Timestamps and version information
+  - Official company responses
+  - User engagement metrics (thumbs up count)
 
 ## Project Structure
 
-- `bayu_sentimen_analysis.ipynb` - Main analysis notebook with data exploration, preprocessing, and sentiment modeling
-- `ulasan_aplikasi.csv` - Complete dataset of application reviews
+- `bayu_sentimen_analysis.ipynb` - Complete analysis notebook including:
+  - Data exploration and preprocessing
+  - Text analysis and visualization (wordcloud, distribution plots)
+  - Sentiment classification and modeling
+  - Statistical insights and findings
+- `ulasan_aplikasi.csv` - Dataset containing all review records
 
 ## Methodology
 
-The analysis includes:
+The analysis workflow includes:
 
-1. Data Loading and Exploration - Understanding dataset structure and characteristics
-2. Data Preprocessing - Text cleaning, normalization, and preparation
-3. Sentiment Analysis - Classification of reviews into sentiment categories
-4. Insights and Visualization - Statistical analysis and pattern identification
-5. Results Interpretation - Key findings and recommendations
+1. **Data Loading & Exploration** - Understanding dataset structure, size, and distribution
+2. **Data Preprocessing** - Text cleaning, tokenization, normalization, and feature extraction
+3. **Sentiment Analysis** - Classification of reviews into sentiment categories using machine learning
+4. **Visualization** - Word frequency analysis, sentiment distribution, rating patterns
+5. **Interpretation** - Key findings and actionable insights from the data
 
-## Technologies
+## Technologies Used
 
-- Python 3.x
-- Jupyter Notebook
-- pandas - Data manipulation and analysis
-- scikit-learn - Machine learning and text processing
-- NumPy - Numerical computing
+- **Python 3.x**
+- **Jupyter Notebook** - Interactive analysis environment
+- **pandas** - Data manipulation and analysis
+- **scikit-learn** - Text processing and machine learning models
+- **NumPy** - Numerical computing
+- **Matplotlib & Seaborn** - Data visualization
+- **WordCloud** - Word frequency visualization
 
-## Key Findings
+## Key Insights
 
-The analysis reveals common user concerns including:
-- Application stability and performance issues
-- Network connectivity problems
-- Payment and transaction errors
-- Data quota management issues
+The sentiment analysis reveals:
 
-## Usage
+- **Common User Issues**:
+  - Application stability and performance problems
+  - Network connectivity and signal issues
+  - Payment and transaction errors
+  - Data quota management concerns
+
+- **User Sentiment Distribution**:
+  - Mix of positive, negative, and neutral reviews
+  - Recurring themes in user feedback
+  - Correlation between issues and low ratings
+
+- **Response Patterns**:
+  - Company response rate and timing
+  - Customer satisfaction impact of support responses
+
+## How to Use
 
 1. Clone the repository
-2. Install dependencies from the environment setup
-3. Open `bayu_sentimen_analysis.ipynb` in Jupyter Notebook
-4. Run cells sequentially to reproduce the analysis
+   ```bash
+   git clone https://github.com/Devaaldo/sentimen-bayu-app.git
+   cd sentimen-bayu-app
+   ```
+
+2. Set up Python environment
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies
+   ```bash
+   pip install pandas scikit-learn numpy matplotlib seaborn wordcloud jupyter
+   ```
+
+4. Launch Jupyter and open the notebook
+   ```bash
+   jupyter notebook bayu_sentimen_analysis.ipynb
+   ```
+
+5. Run cells sequentially to reproduce the entire analysis
+
+## Results
+
+The notebook generates:
+- Word clouds showing frequent terms in positive and negative reviews
+- Sentiment distribution visualizations
+- Statistical summaries and insights
+- Recommendations based on analysis findings
+
+## Author
+
+Created for portfolio demonstration of data analysis and NLP capabilities.
 
 ## License
 
