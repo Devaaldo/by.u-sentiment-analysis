@@ -9,10 +9,6 @@ __pycache__/
 *$py.class
 *.so
 
-# Jupyter Notebook
-.ipynb_checkpoints/
-*.ipynb
-
 # Data files (large)
 *.csv
 
