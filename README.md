@@ -1,6 +1,6 @@
 # Bayu App Sentiment Analysis
 
-A comprehensive sentiment analysis project that analyzes user reviews from the Bayu (by.U) mobile application using natural language processing and machine learning techniques.
+A comprehensive sentiment analysis project that analyzes user reviews from the by.U mobile application using natural language processing and machine learning techniques.
 
 ## Overview
 
@@ -19,9 +19,29 @@ This project extracts and analyzes 227,588+ customer reviews from the Bayu telec
 ## Visualizations
 
 ### Word Cloud Analysis
-![Word Cloud of User Reviews](images/wordcloud_reviews.png)
+
+![Word Cloud of All Reviews](images/word-cloud-all.png)
 
 The word cloud above represents the most frequently occurring terms in all user reviews. Larger text indicates more frequently mentioned words, revealing common themes and pain points users discuss.
+
+### Sentiment-Specific Word Clouds
+
+![Positive Reviews Word Cloud](images/word-cloud-positive.png)
+![Negative Reviews Word Cloud](images/word-cloud-negative.png)
+
+Word clouds for positive and negative reviews show distinct patterns—positive reviews emphasize benefits and features, while negative reviews highlight issues and complaints.
+
+### Sentiment Distribution
+
+![Sentiment Polarity Distribution](images/sentiment-polarity-review-data.png)
+
+This visualization shows the distribution of sentiment across the 227,588 reviews, revealing the balance between positive and negative feedback.
+
+### Model Comparison
+
+![Model Performance Comparison](images/model-comparison.png)
+
+Comparison of different machine learning models used for sentiment classification.
 
 ## Project Structure
 
@@ -29,23 +49,11 @@ The word cloud above represents the most frequently occurring terms in all user 
   - Data exploration and preprocessing
   - Text analysis and visualization (wordcloud, distribution plots)
   - Sentiment classification and modeling
-  - Statistical insights and findings
-- `ulasan_aplikasi.csv` - Dataset containing all review records
 - `images/` - Visualizations and charts generated from analysis
-
-## Methodology
-
-The analysis workflow includes:
-
-1. **Data Loading & Exploration** - Understanding dataset structure, size, and distribution
-2. **Data Preprocessing** - Text cleaning, tokenization, normalization, and feature extraction
-3. **Sentiment Analysis** - Classification of reviews into sentiment categories using machine learning
-4. **Visualization** - Word frequency analysis, sentiment distribution, rating patterns
-5. **Interpretation** - Key findings and actionable insights from the data
 
 ## Technologies Used
 
-- **Python 3.x**
+- **Python 3.11**
 - **Jupyter Notebook** - Interactive analysis environment
 - **pandas** - Data manipulation and analysis
 - **scikit-learn** - Text processing and machine learning models
@@ -53,45 +61,30 @@ The analysis workflow includes:
 - **Matplotlib & Seaborn** - Data visualization
 - **WordCloud** - Word frequency visualization
 
-## Key Insights
-
-The sentiment analysis reveals:
-
-- **Common User Issues**:
-  - Application stability and performance problems
-  - Network connectivity and signal issues
-  - Payment and transaction errors
-  - Data quota management concerns
-
-- **User Sentiment Distribution**:
-  - Mix of positive, negative, and neutral reviews
-  - Recurring themes in user feedback
-  - Correlation between issues and low ratings
-
-- **Response Patterns**:
-  - Company response rate and timing
-  - Customer satisfaction impact of support responses
-
 ## How to Use
 
 1. Clone the repository
+
    ```bash
    git clone https://github.com/Devaaldo/sentimen-bayu-app.git
    cd sentimen-bayu-app
    ```
 
 2. Set up Python environment
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
 3. Install dependencies
+
    ```bash
    pip install pandas scikit-learn numpy matplotlib seaborn wordcloud jupyter
    ```
 
 4. Launch Jupyter and open the notebook
+
    ```bash
    jupyter notebook bayu_sentimen_analysis.ipynb
    ```
@@ -101,15 +94,8 @@ The sentiment analysis reveals:
 ## Results
 
 The notebook generates:
+
 - Word clouds showing frequent terms in positive and negative reviews
 - Sentiment distribution visualizations
 - Statistical summaries and insights
 - Recommendations based on analysis findings
-
-## Author
-
-Created for portfolio demonstration of data analysis and NLP capabilities.
-
-## License
-
-This project is for educational and analytical purposes.
