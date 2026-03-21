@@ -1,14 +1,14 @@
-# Bayu App Sentiment Analysis
+# by.U App Sentiment Analysis
 
 A comprehensive sentiment analysis project that analyzes user reviews from the by.U mobile application using natural language processing and machine learning techniques.
 
 ## Overview
 
-This project extracts and analyzes 227,588+ customer reviews from the Bayu telecommunications application to understand user sentiment, identify pain points, and evaluate customer satisfaction. The analysis includes data preprocessing, sentiment classification, and statistical insights on user feedback patterns.
+This project extracts and analyzes 227,588+ customer reviews from the by.U telecommunications application to understand user sentiment, identify pain points, and evaluate customer satisfaction. The analysis includes data preprocessing, sentiment classification, and statistical insights on user feedback patterns.
 
 ## Dataset
 
-- **Source**: Bayu (by.U) application reviews from Google Play Store
+- **Source**: by.U application reviews from Google Play Store
 - **Records**: 227,588 reviews
 - **Features**:
   - User reviews and ratings
@@ -45,7 +45,7 @@ Comparison of different machine learning models used for sentiment classificatio
 
 ## Project Structure
 
-- `bayu_sentimen_analysis.ipynb` - Complete analysis notebook including:
+- `byu_sentimen_analysis.ipynb` - Complete analysis notebook including:
   - Data exploration and preprocessing
   - Text analysis and visualization (wordcloud, distribution plots)
   - Sentiment classification and modeling
@@ -66,8 +66,8 @@ Comparison of different machine learning models used for sentiment classificatio
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/Devaaldo/sentimen-bayu-app.git
-   cd sentimen-bayu-app
+   git clone https://github.com/Devaaldo/by.u-sentiment-analysis.git
+   cd by.u-sentiment-analysis
    ```
 
 2. Set up Python environment
@@ -86,7 +86,7 @@ Comparison of different machine learning models used for sentiment classificatio
 4. Launch Jupyter and open the notebook
 
    ```bash
-   jupyter notebook bayu_sentimen_analysis.ipynb
+   jupyter notebook byu_sentimen_analysis.ipynb
    ```
 
 5. Run cells sequentially to reproduce the entire analysis
